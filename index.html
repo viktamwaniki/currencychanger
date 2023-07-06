@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Currency Exchange App</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Currency Exchange App</h1>
+
+  <div id="exchange-container">
+    <label for="from-currency">From:</label>
+    <select id="from-currency" name="from-currency">
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="GBP">GBP</option>
+      <!-- Add more currency options here -->
+    </select>
+
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" name="amount" step="0.01" required>
+
+    <label for="to-currency">To:</label>
+    <select id="to-currency" name="to-currency">
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="GBP">GBP</option>
+      <!-- Add more currency options here -->
+    </select>
+
+    <button id="exchange-btn">Exchange</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

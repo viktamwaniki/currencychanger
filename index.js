@@ -1,0 +1,41 @@
+document.getElementById("exchange-btn").addEventListener("click", function() {
+    // Get user inputs
+    var fromCurrency = document.getElementById("from-currency").value;
+    var toCurrency = document.getElementById("to-currency").value;
+    var amount = parseFloat(document.getElementById("amount").value);
+  
+    // Validate inputs
+    if (isNaN(amount)) {
+      alert("Please enter a valid amount.");
+      return;
+    }
+  
+    // Perform currency exchange
+    var exchangeRate = getExchangeRate(fromCurrency, toCurrency);
+    var convertedAmount = amount * exchangeRate;
+  
+    // Display result
+    var resultElement = document.getElementById("result");
+    resultElement.innerHTML = amount + " " + fromCurrency + " = " + convertedAmount.toFixed(2) + " " + toCurrency;
+  });
+  
+  // Simulated exchange rates (replace with actual exchange rate API call)
+  function getExchangeRate(fromCurrency, toCurrency) {
+    var rates = {
+      "USD": {
+        "EUR": 0.85,
+        "GBP": 0.72
+      },
+      "EUR": {
+        "USD": 1.18,
+        "GBP": 0.85
+      },
+      "GBP": {
+        "USD": 1.38,
+        "EUR": 1.18
+      }
+    };
+  
+    return rates[fromCurrency][toCurrency];
+  }
+  
