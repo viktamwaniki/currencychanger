@@ -1,5 +1,5 @@
 document.getElementById("exchange-btn").addEventListener("click", function() {
-    // Get user inputs
+  
     var fromCurrency = document.getElementById("from-currency").value;
     var toCurrency = document.getElementById("to-currency").value;
     var amount = parseFloat(document.getElementById("amount").value);
