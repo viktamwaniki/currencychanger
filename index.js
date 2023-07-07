@@ -4,7 +4,7 @@ document.getElementById("exchange-btn").addEventListener("click", function() {
     var toCurrency = document.getElementById("to-currency").value;
     var amount = parseFloat(document.getElementById("amount").value);
   
-    // Validate inputs
+   
     if (isNaN(amount)) {
       alert("Please enter a valid amount.");
       return;
