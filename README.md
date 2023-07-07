@@ -18,7 +18,8 @@ The Currency Exchange Application is a simple web-based application that allows 
 ## How to Use
 
 1. Clone the repository.
-2. Copy url and use!
+2. Copy url and use
+3. Convert from one currency to another
 
 
 THANKYOU ENJOY
