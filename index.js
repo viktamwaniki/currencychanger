@@ -19,7 +19,7 @@ document.getElementById("exchange-btn").addEventListener("click", function() {
     resultElement.innerHTML = amount + " " + fromCurrency + " = " + convertedAmount.toFixed(2) + " " + toCurrency;
   });
   
-  // Simulated exchange rates (replace with actual exchange rate API call)
+  
   function getExchangeRate(fromCurrency, toCurrency) {
     var rates = {
       "USD": {
