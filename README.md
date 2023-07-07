@@ -22,4 +22,4 @@ The Currency Exchange Application is a simple web-based application that allows 
 3. Convert from one currency to another
 
 
-     !THANK    YOU    ENJOY!
+     !THANK     YOU     ENJOY!
