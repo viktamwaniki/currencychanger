@@ -9,17 +9,13 @@ document.getElementById("exchange-btn").addEventListener("click", function() {
       alert("Please enter a valid amount.");
       return;
     }
-  
-   
+    
     var exchangeRate = getExchangeRate(fromCurrency, toCurrency);
     var convertedAmount = amount * exchangeRate;
-  
-   
     var resultElement = document.getElementById("result");
     resultElement.innerHTML = amount + " " + fromCurrency + " = " + convertedAmount.toFixed(2) + " " + toCurrency;
   });
-  
-  
+
   function getExchangeRate(fromCurrency, toCurrency) {
     var rates = {
       "USD": {
