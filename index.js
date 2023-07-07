@@ -14,7 +14,7 @@ document.getElementById("exchange-btn").addEventListener("click", function() {
     var exchangeRate = getExchangeRate(fromCurrency, toCurrency);
     var convertedAmount = amount * exchangeRate;
   
-    // Display result
+   
     var resultElement = document.getElementById("result");
     resultElement.innerHTML = amount + " " + fromCurrency + " = " + convertedAmount.toFixed(2) + " " + toCurrency;
   });
