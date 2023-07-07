@@ -10,7 +10,7 @@ document.getElementById("exchange-btn").addEventListener("click", function() {
       return;
     }
   
-    // Perform currency exchange
+   
     var exchangeRate = getExchangeRate(fromCurrency, toCurrency);
     var convertedAmount = amount * exchangeRate;
   
